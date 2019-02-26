@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css\framework\bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>form</title>
+</head>
+
+<body>
+    <header>
+       
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div class="form" style="width:250px">
+                        <form>
+                            <legend class="formlegend text-center">Sign Up</legend>
+                            <div class="form-group">
+                                <label for="firstname">First name</label>
+                                <input type="text" class="form-control" required id="firstname" placeholder="Enter First name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last name</label>
+                                <input type="text" class="form-control" required id="lastname" placeholder="Enter Last name">
+                            </div>
+                            <div class="form-group">
+                                <label for="emailaddress">Email address</label>
+                                <input type="email" class="form-control" required id="emailaddress" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                                
+                            </div>
+                            <div class="form-group" class="row">
+                                <label for="zipcode">Zipcode:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" required id="zipcode" maxlength="6">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gender">Gender
+                                    <input type="radio" name="gender" id="male" checked required value="Male">Male</input>
+                                    <input type="radio" name="gender" id="female" required value="Female">Female</input>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="number" required id="age">
+                            </div>
+
+                            <div>
+                                <input type="button" value="Submit" id="done" onclick="finish()">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                    <div id="details" class="col-md-4">
+                        <p id="result1">Hello world</p>
+                
+                
+                    </div>
+
+            </div>
+            
+        </div>
+
+             
+    </main>
+
+
+   
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>
